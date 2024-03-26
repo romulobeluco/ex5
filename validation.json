@@ -1,0 +1,32 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    required: [
+      '_id',
+      'titulo',
+      'autor',
+      'ano',
+      'preco'
+    ],
+    properties: {
+      _id: {
+        description: 'deve ser um inteiro ou uma string'
+      },
+      titulo: {
+        bsonType: 'string',
+        description: 'deve ser uma string e é obrigatório'
+      },
+      autor: {
+        bsonType: 'string',
+        description: 'deve ser uma string e é obrigatório'
+      },
+      ano: {
+        bsonType: 'int',
+        description: 'deve ser um inteiro'
+      },
+      preco: {
+        description: 'deve ser um número positivo e é obrigatório'
+      }
+    }
+  }
+}
